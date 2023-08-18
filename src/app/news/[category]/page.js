@@ -10,7 +10,7 @@ const NewsCategory = ({params : {category}}) => {
   const { categoryNews, fetchnews, formattedDate } = useGlobalContext();
   
   useEffect(()=>{
-    fetchnews(`http://api.mediastack.com/v1/news?access_key=${process.env.API_KEY}&countries=in&categories=${category}&date=${formattedDate}`)
+    fetchnews(`http://api.mediastack.com/v1/news?access_key=${process.env.NEXT_PUBLIC_API_KEY}&countries=in,us&categories=${category}&date=${formattedDate}`)
   }, [category])
 
   return (

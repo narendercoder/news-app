@@ -20,7 +20,7 @@ const ListView = ({ article }) => {
           <div className="relative card-img w-full h-full flex justify-center items-center overflow-hidden">
             <div>
               <img
-                src={article.image}
+                src={article.image || unavailable}
                 alt="img"
                 width={551}
                 height={431}

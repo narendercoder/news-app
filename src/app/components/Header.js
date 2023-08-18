@@ -23,9 +23,9 @@ const Header = () => {
       <div className="flex justify-center items-center">
         <Link href="/" prefetch={false}>
           {resolvedTheme === "light" ? (
-            <img src="logo.webp" alt="logo" />
+            <img src="/logo.webp" alt="logo" />
           ) : (
-            <img src="logo-Newstime-01-white.webp" alt="logo" />
+            <img src="/logo-Newstime-01-white.webp" alt="logo" />
           )}
         </Link>
       </div>
@@ -34,14 +34,14 @@ const Header = () => {
         {/* Darkmode button */}
         <DarkModeButton />
         {/* subscribe button */}
-        <button className="subscribe-btn hidden md:inline text-white px-4 lg:px-8 py-2 lg:py-4 rounded-full ">
+        <button className="subscribe-btn hidden lg:inline text-white px-4 lg:px-8 py-2 lg:py-4 rounded-full ">
           Subscribe now
         </button>
 
        {
         currentUser ?  <Menu as="div" className="relative inline-block text-left">
             <div>
-              <Menu.Button className="menu-button flex justify-center items-center w-full justify-center rounded-md  px-4 py-2 text-sm font-medium ">
+              <Menu.Button className="menu-button flex justify-center items-center w-full  rounded-md  text-sm font-medium ">
                 <BsFillPersonFill className=" text-2xl"/>
                 <BiChevronDown
               className="ml-2 -mr-1 h-5 w-5"

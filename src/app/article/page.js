@@ -3,6 +3,7 @@ import React from "react";
 import Sidebar from "../components/Sidebar";
 import Badege from "../components/Badege";
 import { MdDateRange } from "react-icons/md";
+import { unavailable } from "../config/images";
 
 const ArticlePage = ({ searchParams }) => {
   if (
@@ -17,7 +18,7 @@ const ArticlePage = ({ searchParams }) => {
     <div className="py-10 w-full">
       <div className="news-content-area flex justify-center items-center">
         <div className="flex flex-col-reverse lg:justify-between lg:flex-row  w-full h-ful">
-          <div className="relative article w-3/4 px-5">
+          <div className="relative article w-full lg:w-3/4 px-5">
             <article className="w-full h-full">
               <section>
                 <div className="mb-3">
@@ -39,7 +40,7 @@ const ArticlePage = ({ searchParams }) => {
                 <div className="mb-10">
                   {article.image && (
                     <img
-                      src={article.image}
+                      src={article.image || unavailable}
                       alt="image"
                       className="w-full h-full"
                     />

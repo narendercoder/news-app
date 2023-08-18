@@ -6,8 +6,10 @@ import { useFilterContext } from "../context/FilterContext";
 import { BsGrid, BsList } from "react-icons/bs";
 import Sidebar from "./Sidebar";
 import { unavailable } from "../config/images";
+import { useGlobalContext } from "../context/Context";
 
 const NewsList = ({ news }) => {
+   const {isSearchLoading, isCategoryLoading, isNewsLoading} = useGlobalContext();
   const { grid_view, setGridView, setListView } = useFilterContext();
 
   return (
@@ -35,7 +37,8 @@ const NewsList = ({ news }) => {
             grid_view ? "grid md:grid-cols-2 xl:grid-cols-3 md:gap-6" : ""
           } flex-wrap"`}
         >
-          {news.map((item) => {
+         { !isSearchLoading || !isCategoryLoading  || !isNewsLoading ? 
+           ( news.length !==0 ? news.map((item) => {
             {
               return grid_view ? (
                 <GridView
@@ -49,7 +52,15 @@ const NewsList = ({ news }) => {
                 />
               );
             }
-          })}
+          })
+          : 
+          (<>
+           No Result Found
+          </>))
+           : <>
+            Loading...
+           </>
+          }
         </main>
       </div>
 

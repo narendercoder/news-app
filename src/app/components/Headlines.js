@@ -6,11 +6,11 @@ import { useGlobalContext } from '../context/Context';
 
 const Headlines = () => {
 
-  const {headlines, getHeadlines} = useGlobalContext();
+  const {headlines, getHeadlines, formattedDate} = useGlobalContext();
 
-  // http://api.mediastack.com/v1/news?access_key=${process.env.NEXT_PUBLIC_API_KEY}&countries=in&date=${formattedDate}&limit={10}
+  // 
   useEffect(()=>{
-    getHeadlines(``)
+    getHeadlines(`http://api.mediastack.com/v1/news?access_key=${process.env.NEXT_PUBLIC_API_KEY}&countries=in&date=${formattedDate}&limit=5`)
   }, [])
 
   return (

@@ -17,7 +17,7 @@ const DarkModeButton = () => {
   }
   const currentTheme = theme === "system" ? systemTheme : theme
   
-  return <div className='flex justify-center items-center mr-5'>
+  return <div className='flex justify-center items-center sm:mr-5'>
     {
       currentTheme === "dark" ? (
          <FiSun className="h-8 w-8 cursor-pointer text-red-500" onClick = {()=> setTheme("light")} />

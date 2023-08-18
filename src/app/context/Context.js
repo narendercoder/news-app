@@ -33,7 +33,7 @@ const AppProvider = ({ children }) => {
     dispatch({type: "SET_NEWS_LOADING"})
     try {
         const response =  await axios.get( url );
-        const data = newsdata || response.data
+        const data =  response.data.data
         // console.log(data)
        
       // const data = newsdata;
@@ -48,7 +48,7 @@ const AppProvider = ({ children }) => {
     try {
     
       const response = await axios.get( url );
-        const data = response.data;
+        const data = response.data.data;
  
       dispatch({type: "GET_SEARCH_NEWS", payload: data})
     } catch (error) {
@@ -60,7 +60,7 @@ const AppProvider = ({ children }) => {
     dispatch({type: "SET_CATEGORY_LOADING"})
     try {
       const response = await axios.get( url );
-        const data = response.data;
+        const data = response.data.data;
       
 
       dispatch({type: "GET_CATEGORY_NEWS", payload: data})
@@ -73,7 +73,7 @@ const AppProvider = ({ children }) => {
     dispatch({type: "SET_HEADLINE_LOADING"})
     try {
       const response =  await axios.get( url );
-      const data = headlines || response.data
+      const data = response.data.data
       console.log(data)
      
     // const data = newsdata;

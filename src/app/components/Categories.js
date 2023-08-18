@@ -18,10 +18,10 @@ const Categories = () => {
             <span className='titledot'></span>
             <span className='titleline'></span>
         </div>
-        <ul className="grid w-full gap-2 lg:grid-rows-6 capitalize">
+        <ul className="categories grid w-full gap-2 lg:grid-rows-6 capitalize">
           {
             categories.map((category)=>{
-              return  <li className="py-5 border-b border-gray-200 dark:border-gray-600" key={category.name}>
+              return  <li className="w-full mr-3 py-5 border-b border-gray-200 dark:border-gray-600" key={category.name}>
               <div className="flex items-center">
               <Navlink  category={category} isActive={isActive(category.name)}/>
               </div>

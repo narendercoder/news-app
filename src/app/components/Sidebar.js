@@ -1,16 +1,15 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import SearchBar from "./SearchBar";
 import { styled } from "styled-components";
 import Headlines from "./Headlines";
 import Categories from "./Categories";
 
 const Sidebar = () => {
-  const [query, setQuary] = useState("");
   return (
-    <Wrapper className="relative px-6 pt-6 mt-0 mb-5 w-full lg:mb-0 lg:w-1/4 bg-white dark:bg-transparent">
+    <Wrapper className="relative px-6 pt-6 mt-0 mb-5 w-full h-full lg:mb-0 lg:w-1/4 bg-white dark:bg-transparent">
       <div>
-        <SearchBar setQuary={setQuary} />
+        <SearchBar  />
         <Categories />
         <Headlines />
       </div>

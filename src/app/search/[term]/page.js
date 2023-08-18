@@ -8,7 +8,7 @@ const SearchPage =  ({params: {term}}) => {
   const {searchNews, getSearchNews, formattedDate} = useGlobalContext();
 
   useEffect(()=>{
-    getSearchNews(`http://api.mediastack.com/v1/news?access_key=${process.env.API_KEY}&countries=in&date=${formattedDate}&keywords=${term}`)
+    getSearchNews(`http://api.mediastack.com/v1/news?access_key=${process.env.NEXT_PUBLIC_API_KEY}&countries=in,us&date=${formattedDate}&keywords=${term}`)
   }, [term])
   return (
     <Wrapper className="py-10 w-full">

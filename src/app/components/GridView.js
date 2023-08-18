@@ -3,6 +3,7 @@ import { styled } from "styled-components";
 import {MdDateRange} from "react-icons/md";
 import { useRouter } from "next/navigation";
 import Badege from "./Badege";
+import { unavailable } from "../config/images";
 
 const GridView = ({ article }) => {
    const router = useRouter()
@@ -20,7 +21,7 @@ const GridView = ({ article }) => {
           <div className="card-img w-full h-56 flex justify-center items-center overflow-hidden">
             <div className="w-full h-full">
               <img
-                src={article.image}
+                src={article.image || unavailable}
                 alt="img"
                 width={480}
                 height={504}
