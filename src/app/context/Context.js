@@ -34,7 +34,7 @@ const AppProvider = ({ children }) => {
     try {
         const response =  await axios.get( url );
         const data = newsdata || response.data
-        console.log(data)
+        // console.log(data)
        
       // const data = newsdata;
 
