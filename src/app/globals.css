@@ -1,13 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 }
-
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
@@ -16,12 +21,118 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'League Spartan', sans-serif;
+  font-weight: 700;
+}
+.fadeInUp {
+  animation-name: fadeInUp;
+}
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+@media (max-width: 700px) {
+  html{
+    font-size: 80%;
+  }
+}
+
+ .category-style {
+  border-radius: 2px;
+  font-size: 12px;
+  color: #fff;
+  font-weight: 500;
+  padding: 6px 9px 5px;
+  line-height: 1;
+  letter-spacing: .8px;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+.red{
+  background-color: red;
+}
+.green{
+  background-color: #558811;
+}
+.light-green{
+  background-color: #3dd800;
+}
+.cyan{
+  background-color: #3da5b4;
+}
+.yellow{
+  background-color: #ffae25;
+}
+.purple{
+  background-color: #ac27c4;
+}
+.blue{
+  background-color: #2962ff;;
+}
+
+
+
+.grid-list-toggle .sort-btn {
+  padding: 0.5rem;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 500;
+  background-color: rgb(33, 37, 41);
+  color: rgb(255, 255, 255);
+}
+.grid-list-toggle .sort-btn.active {
+  background-color: #d82a50;
+}
+
+@media (min-width: 1400px) {
+  .custom-container {
+    max-width: 1350px;
+  }
+}
+@media (max-width: 1024px) {
+  .category-list ul{
+     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+}
+@media (min-width: 992px) and (max-width: 1400px) {
+  .custom-container {
+    max-width: 1220px;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .custom-container {
+    max-width: 920px;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .custom-container {
+    max-width: 768px;
+  }
+}
+@media (max-width: 768px) {
+  .card-img{
+    max-width: 100% !important;
+    width: 100% !important;
+    margin-right: 0 !important;
+  }
+  .card-box .card-img img {
+     width: 100%;
+     max-width: 100% !important;
+  }
+  .card-box .card-img{
+    width: 100%;
+  }
+}
+@media (max-width: 576px) {
+  .custom-container {
+  min-width: 375px;
+}
 }
