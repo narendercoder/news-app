@@ -4,6 +4,7 @@ import { MdDateRange } from "react-icons/md";
 import { BsArrowRight } from "react-icons/bs";
 import Badege from "./Badege";
 import { useRouter } from "next/navigation";
+import { unavailable } from "../config/images";
 
 const ListView = ({ article }) => {
   const router = useRouter()

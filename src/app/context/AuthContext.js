@@ -4,6 +4,7 @@ import { auth, db } from '@/firebase/config'
 import { signInWithEmailAndPassword, createUserWithEmailAndPassword, signOut, onAuthStateChanged } from 'firebase/auth'
 import { doc, getDoc } from 'firebase/firestore'
 import { useRouter } from 'next/navigation'
+import { toast } from 'react-toastify'
 
 const AuthContext = React.createContext()
 
@@ -17,8 +18,8 @@ export function AuthProvider({ children }) {
     const [loading, setLoading] = useState(true)
 
     function signup(email, password) {
-        createUserWithEmailAndPassword(auth, email, password)
-        return
+        return createUserWithEmailAndPassword(auth, email, password)
+        
     }
 
     function login(email, password) {
@@ -28,7 +29,7 @@ export function AuthProvider({ children }) {
     function logout() {
         signOut(auth)
         router.push('/') 
-        toast.error('Signout Successfully');
+        toast.success('Signout Successfully');
     }
 
 
