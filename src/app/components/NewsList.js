@@ -5,11 +5,11 @@ import { v4 as uuidv4 } from "uuid";
 import { useFilterContext } from "../context/FilterContext";
 import { BsGrid, BsList } from "react-icons/bs";
 import Sidebar from "./Sidebar";
-import { unavailable } from "../config/images";
-import { useGlobalContext } from "../context/Context";
+import { useSelector } from "react-redux";
 
 const NewsList = ({ news }) => {
-   const {isSearchLoading, isCategoryLoading, isNewsLoading} = useGlobalContext();
+  const newsdata = useSelector(state => state.news);
+  const {isSearchLoading, isCategoryLoading, isNewsLoading} = newsdata;
   const { grid_view, setGridView, setListView } = useFilterContext();
 
   return (

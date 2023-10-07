@@ -1,13 +1,24 @@
 "use client";
 import { useEffect } from "react";
-import { useGlobalContext } from "../context/Context";
 import NewsList from "./NewsList";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchNews } from "../Redux/slice/newSlice";
+import { formatDate } from "../helpers/datehelper";
 
 const HomePage = () => {
-  const { news, getAllNews, formattedDate } = useGlobalContext();
+  const newsdata = useSelector(state => state.news);
+  const dispatch = useDispatch();
+  const { news } = newsdata;
+  const date = new Date();
+  const formattedDate = formatDate(date);
+
+  console.log(news)
+
   useEffect(()=>{
-    getAllNews(`http://api.mediastack.com/v1/news?access_key=${process.env.NEXT_PUBLIC_API_KEY}&countries=in&date=${formattedDate}&categories=general,business,entertainment,health,science,sports,technology&limit={48}`)
+    dispatch(fetchNews(`http://api.mediastack.com/v1/news?access_key=${process.env.NEXT_PUBLIC_API_KEY}&countries=in&date=${formattedDate}&categories=general,business,entertainment,health,science,sports,technology&limit={48}`))
   }, [])
+
+  
 
   return (
     <div className="py-10 w-full ">

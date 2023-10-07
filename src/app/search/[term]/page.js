@@ -1,14 +1,22 @@
 'use client'
+import { fetchSearchNews } from '@/app/Redux/slice/newSlice';
 import NewsList from '@/app/components/NewsList';
-import { useGlobalContext } from '@/app/context/Context'
+import { formatDate } from '@/app/helpers/datehelper';
 import React, { useEffect } from 'react'
+import { useDispatch, useSelector } from 'react-redux';
 import { styled } from 'styled-components';
 
 const SearchPage =  ({params: {term}}) => {
-  const {searchNews, getSearchNews, formattedDate} = useGlobalContext();
+  const newsData = useSelector(state => state.news);
+
+  const {searchNews} = newsData
+
+  const dispatch = useDispatch();
+  const date = new Date();
+  const formattedDate = formatDate(date);
 
   useEffect(()=>{
-    getSearchNews(`http://api.mediastack.com/v1/news?access_key=${process.env.NEXT_PUBLIC_API_KEY}&countries=in,us&date=${formattedDate}&keywords=${term}`)
+    dispatch(fetchSearchNews(`http://api.mediastack.com/v1/news?access_key=${process.env.NEXT_PUBLIC_API_KEY}&countries=in,us&date=${formattedDate}&keywords=${term}`))
   }, [term])
   return (
     <Wrapper className="py-10 w-full">

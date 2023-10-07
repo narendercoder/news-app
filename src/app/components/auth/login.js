@@ -2,8 +2,14 @@
 import React, { useState } from "react";
 import { useAuth } from "../../context/AuthContext";
 import {toast}  from "react-toastify"
+import { useSelector } from "react-redux";
+
 
 export default function Login() {
+
+  const news = useSelector(state => state.news)
+  console.log(news.categoryNews)
+
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   // const [error, setError] = useState(null);
@@ -38,7 +44,7 @@ export default function Login() {
   }
 
   return (
-    <div className="sm:max-w-sm py-40 flex-1 text-xs sm:text-sm flex flex-col items-center gap-5 sm:gap-6  h-screen">
+    <div className="sm:max-w-sm py-40 flex-1 text-xs sm:text-sm flex flex-col items-center gap-5 sm:gap-6  h-full">
  
       <h1 className="font-extrabold select-none text-2xl sm:text-4xl uppercase">
         {isLoggingIn ? "Login" : "register"}
