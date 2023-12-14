@@ -8,7 +8,6 @@ import { useSelector } from "react-redux";
 export default function Login() {
 
   const news = useSelector(state => state.news)
-  console.log(news.categoryNews)
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -17,7 +16,6 @@ export default function Login() {
 
   const { login, signup, currentUser } = useAuth();
 
-  console.log(isLoggingIn)
 
   async function submitHandler() {
     if (!email || !password) {
