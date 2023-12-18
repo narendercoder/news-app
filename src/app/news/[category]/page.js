@@ -5,18 +5,16 @@ import { categories } from '@/app/config/categories';
 import { styled } from 'styled-components';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchCategoryNews } from '@/app/Redux/slice/newSlice';
-import { formatDate } from '@/app/helpers/datehelper';
 
 const NewsCategory = ({params : {category}}) => {
   const news = useSelector(state => state.news);
   const {categoryNews} = news;
-
   const dispatch = useDispatch();
-  const date = new Date();
-  const formattedDate = formatDate(date);
+
+  console.log(categoryNews);
   
   useEffect(()=>{
-    dispatch(fetchCategoryNews(`http://api.mediastack.com/v1/news?access_key=${process.env.NEXT_PUBLIC_API_KEY}&countries=in,us&categories=${category}&date=${formattedDate}`))
+    dispatch(fetchCategoryNews(`${category}`))
   }, [category])
 //
   return (

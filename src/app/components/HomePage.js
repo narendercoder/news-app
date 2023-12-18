@@ -15,10 +15,8 @@ const HomePage = () => {
   console.log(news)
 
   useEffect(()=>{
-    dispatch(fetchNews(`http://api.mediastack.com/v1/news?access_key=${process.env.NEXT_PUBLIC_API_KEY}&countries=in&date=${formattedDate}&categories=general,business,entertainment,health,science,sports,technology&limit={48}`))
+    dispatch(fetchNews())
   }, [])
-
-  
 
   return (
     <div className="py-10 w-full ">
