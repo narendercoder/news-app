@@ -8,7 +8,7 @@ import { formatDate } from '../helpers/datehelper';
 
 
 const Headlines = () => {
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
   const newsdata = useSelector(state => state.news);
   const {headlines} = newsdata;
   const date = new Date();

@@ -1,104 +1,56 @@
 import { newsdata } from "@/app/config/sampleoutput";
-import { categories } from "@/app/constant";
+// import { categories } from "@/app/constant";
 import { formatDate } from "@/app/helpers/datehelper";
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-import { gql } from "graphql-request";
 import axios from "axios";
 const date = new Date();
-const formattedDate = formatDate(date);
+// const formattedDate = formatDate(date);
 
 //
 export const fetchingNews = async (category, keywords, isDynamic, limit) => {
-  // GraphQl query
-  const query = gql`
-query MyQuery(
-    $access_key: String!
-    $categories: String!
-    $keywords: String
-    $limit: String
-) {
-    myQuery(
-        access_key: $access_key
-        categories: $categories
-        countries: "in"
-        sort: "published_desc"
-        keywords: $keywords
-        limit: $limit
-    ) {
-        data {
-            author
-            category
-            country
-            description
-            image
-            language
-            published_at
-            source
-            title
-            url
-        }
-        pagination {
-            count
-            limit
-            offset
-            total
-        }
-    }
-}`;
 
-  // fetch function
-  const res = await fetch(
-    "https://hohrgrenzhausen.stepzen.net/api/hissing-quokka/__graphql",
-    {
-      method: "POST",
+try {
+     let BASE_URL = "";
+
+    // 🔍 SEARCH API
+    if (category) {
+      BASE_URL = `https://newsapi.org/v2/top-headlines?country=us&category=${category}&pageSize=${limit}&apiKey=${process.env.NEXT_PUBLIC_API_KEY}`; 
+    }
+    // 📰 CATEGORY / HEADLINES API
+    else {
+      BASE_URL = `https://newsapi.org/v2/everything?q=${keywords}&language=en&sortBy=publishedAt&pageSize=${limit}&apiKey=${process.env.NEXT_PUBLIC_API_KEY}`;
+    }
+
+    const res = await axios.get(`${BASE_URL}`, {
       cache: isDynamic ? "no-cache" : "default",
       next: isDynamic ? { revalidate: 0 } : { revalidate: 20 },
-      headers: {
-        "Content-type": "application/json",
-        Authorization: `Apikey ${process.env.NEXT_PUBLIC_STEPZEN_API_KEY}`,
-      },
-      body: JSON.stringify({
-        query,
-        variables: {
-          access_key: process.env.NEXT_PUBLIC_API_KEY,
-          categories: category,
-          keywords: keywords,
-          limit: limit
-        },
-      }),
-    }
-  );
+    });
 
-//   console.log(
-//     "Loading new data from API for category: " +
-//       category +
-//       " and keywords: " +
-//       keywords
-//   );
+    const data = res.data.articles;
+    return data; // ⚡ returns { data: [...] }
+  } catch (error) {
+    console.error("Error fetching news:", error);
+    return null;
+  }
 
-  const NewsResponse = await res.json();
-
-  // return news
-  return NewsResponse;
 };
 
 
 // Create async thunk for fetching news
 export const fetchNews = createAsyncThunk("fetchNews", async () => {
   try {
-    const response = await fetchingNews(categories.join(","))
-    
-    return response.data.myQuery.data;
-    
+    const response =  await fetchingNews("general") || newsdata.articles;
+    return response
+
   } catch (error) {
-    throw error;
+    throw error
   }
 });
 
-  export const fetchSearchNews = createAsyncThunk("fetchSearchNews", async (url) => {
+  export const fetchSearchNews = createAsyncThunk("fetchSearchNews", async (keyword, limit) => {
     try {
-      const response = await fetchingNews(url) ;
-      return response.data.myQuery.data;
+      const response = await fetchingNews('',keyword, limit) 
+      return response;
     } catch (error) {
       throw error;
     }
@@ -106,9 +58,8 @@ export const fetchNews = createAsyncThunk("fetchNews", async () => {
 
 export const fetchCategoryNews = createAsyncThunk("fetchCategoryNews",  async (cate) => {
     try {
-      const response = await fetchingNews(cate);
-      return response.data.myQuery.data;
-  
+      const response = await fetchingNews(cate) 
+      return response
     } catch (error) {
       throw error;
     }
@@ -117,8 +68,8 @@ export const fetchCategoryNews = createAsyncThunk("fetchCategoryNews",  async (c
 
 export const fetchHeadlines = createAsyncThunk("fetchHeadlines",async () => {
     try {
-      const response = await fetchingNews('','','',5);
-      return response.data.myQuery.data;
+      const response = await fetchingNews('', 'bitcoin', '', 5)
+      return response
     } catch (error) {
       throw error;
     }

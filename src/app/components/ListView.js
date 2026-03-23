@@ -7,12 +7,13 @@ import { useRouter } from "next/navigation";
 import { unavailable } from "../config/images";
 
 const ListView = ({ article }) => {
-  const router = useRouter()
-  const date = new Date(article.published_at).toLocaleDateString("en-US");
+  // const router = useRouter()
+  const date = new Date(article.publishedAt).toLocaleDateString("en-US");
   const handleClick =() =>{
-    const queryString = Object.entries(article).map(([key, value])=> `${key}=${value}`).join("&");
-    const url = `/article?${queryString}`;
-    router.push(url)
+    // const queryString = Object.entries(article).map(([key, value])=> `${key}=${value}`).join("&");
+    // const url = `/article?${queryString}`;
+    const url = `${article.url}`;
+   window.open(url, "_blank");
   }
   return (
     <Wrapper className="card mt-5 w-full fadeInUp animated list-view">
@@ -21,25 +22,26 @@ const ListView = ({ article }) => {
           <div className="relative card-img w-full h-full flex justify-center items-center overflow-hidden">
             <div>
               <img
-                src={article.image || unavailable}
+                src={article.urlToImage || unavailable}
                 alt="img"
                 width={551}
                 height={431}
                 loading="lazy"
               />
             </div>
-            <Badege/>
+            {
+              article.category && <Badege text={article.category}/>
+           }
           </div>
           <div className="card-content w-full flex flex-col justify-around p-5 bg-white dark:bg-transparent">
             <h3 className="title">
               {article.title}
             </h3>
-            <p className="mb-3">{article.content}</p>
+            <p className="mb-3 line-clamp-2 text-gray-500 dark:text-gray-400">{article.content}</p>
             <ul className="entry-meta flex items-center">
               <li className="post-author mr-4">
-                By{" "}
-                <span className=" text-black dark:text-white">
-                  {article.author ? article.author : "unknown"}
+                <span className=" text-black dark:text-white line-clamp-2">
+                  By{" "}{article.author ? article.author : "unknown"}
                 </span>
               </li>
               <li className="post-date flex justify-center items-center">

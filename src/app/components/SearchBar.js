@@ -1,17 +1,21 @@
 'use client'
-import React, { useState } from "react";
+import React, {  useState } from "react";
 import { styled } from "styled-components";
 import {BiSearch} from "react-icons/bi"
 import {useRouter} from "next/navigation"
+// import { fetchingNews } from "../Redux/slice/newSlice";
+// import { useDispatch } from "react-redux";
 
 const SearchBar = () => {
   const [input, setInput] = useState("");
+  // const dispatch = useDispatch();
   const router = useRouter();
   const handleSearch = (e) =>{
     e.preventDefault();
     if(!input) return;
     router.push(`/search/${input}`)
   }
+
   return (
     <Wrapper className="search">
       <div className="custom-search-input">

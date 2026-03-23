@@ -6,12 +6,13 @@ import Badege from "./Badege";
 import { unavailable } from "../config/images";
 
 const GridView = ({ article }) => {
-   const router = useRouter()
-    const date = new Date(article.published_at).toLocaleDateString("en-US");
+  //  const router = useRouter()
+    const date = new Date(article.publishedAt).toLocaleDateString("en-US");
     const handleClick =() =>{
-      const queryString = Object.entries(article).map(([key, value])=> `${key}=${value}`).join("&");
-      const url = `/article?${queryString}`;
-      router.push(url)
+      // const queryString = Object.entries(article).map(([key, value])=> `${key}=${value}`).join("&");
+      // const url = `/article?${queryString}`;
+       const url = `${article.url}`;
+      window.open(url, "_blank");
     }
   return (
     <Wrapper className= "relative card mt-5 w-full fadeInUp animated flex justify-center" >
@@ -21,7 +22,7 @@ const GridView = ({ article }) => {
           <div className="card-img w-full h-56 flex justify-center items-center overflow-hidden">
             <div className="w-full h-full">
               <img
-                src={article.image || unavailable}
+                src={article.urlToImage || unavailable}
                 alt="img"
                 width={480}
                 height={504}
@@ -32,24 +33,28 @@ const GridView = ({ article }) => {
           </div>
           <div className="card-content flex-1 flex flex-col cursor-pointer bg-white dark:bg-transparent ">
           <div className="flex-1 flex flex-col p-5">
-            <span className="category flex-1 capitalize text-white mb-2">
-            <Badege category={article.category} />
-          </span>
+           {
+              article.category && <Badege text={article.category}/>
+           }
           <h2 className="title flex-1">
             <div>{article.title}</div>
           </h2>
-          <ul className="entry-meta flex flex-1 items-center">
-            <li className="post-author mr-4">
-                By{" "}
-                <span className="text-black dark:text-white">
-                {article.author ? article.author : "unknown"}
+          <div className="entry-meta">
+            <div className="post-source mr-4 w-full my-1">
+                <span className="font-semibold dark:text-blue-400 text-blue-500 ">
+                Source: {article.source.name ? article.source.name : "unknown"}
                 </span>
-            </li>
-            <li className="post-date flex justify-center items-center">
-            <MdDateRange className="inline mr-2 text-sm"/>
+            </div>
+            <div className="post-author mr-4 my-1">
+                 <span className="text-black dark:text-white line-clamp-1">
+                By{" "}{article.author ? article.author : "unknown"}
+                </span>
+            </div>
+            <div className="post-date text-gray-500 dark:text-gray-400">
+            <MdDateRange className="inline mr-2 text-sm "/>
             {date}
-            </li>
-          </ul>
+            </div>
+          </div>
           </div>
         </div>
         </div>

@@ -1,304 +1,258 @@
 
 export const newsdata = [
   {
-    "author": null,
-    "title": "Fed officials divided in July over need for more rate hikes, minutes show",
-    "description": "US Treasury yields hit session highs after the release of the minutes while US stocks extended losses. The dollar was trading higher against a basket of currencies.",
-    "url": "https://www.businesstoday.in/latest/world/story/fed-officials-divided-in-july-over-need-for-more-rate-hikes-minutes-show-394399-2023-08-17?utm_source=rssfeed",
-    "source": "Business Today | Latest Stock Market And Economy News India",
-    "image": null,
-    "category": "business",
-    "language": "en",
-    "country": "in",
-    "published_at": "2023-08-17T01:45:54+00:00"
-  },
-  {
-    "author": null,
-    "title": "Gautam Saha appointed interim V-C of BCKV",
-    "description": "Gautam Saha appointed interim V-C of BCKV",
-    "url": "https://www.thehindu.com/news/national/other-states/gautam-saha-appointed-interim-v-c-of-bckv/article67204281.ece",
-    "source": "The Hindu",
-    "image": null,
-    "category": "general",
-    "language": "en",
-    "country": "in",
-    "published_at": "2023-08-17T03:21:43+00:00"
-  },
-  {
-    "author": null,
-    "title": "IRFC shares plunge 6%, a day after hitting record high. Here's why",
-    "description": "IRFC shares fell 5.66 per cent to hit a low of Rs 48.29 on BSE. The stock is up 49 per cent year-to-date and 130 per cent in the last one year.",
-    "url": "https://www.businesstoday.in/markets/company-stock/story/irfc-shares-plunge-6-a-day-after-hitting-record-high-heres-why-394427-2023-08-17?utm_source=rssfeed",
-    "source": "businesstoday",
-    "image": null,
-    "category": "general",
-    "language": "en",
-    "country": "in",
-    "published_at": "2023-08-17T04:33:52+00:00"
-  },
-  {
-    "author": null,
-    "title": "Landslides block highway in Manipur, at least 500 trucks stranded",
-    "description": "At least 500 goods vehicles are stranded in different parts of the Imphal-Silchar highway due to the landslides",
-    "url": "https://www.thehindu.com/news/national/other-states/landslides-block-highway-in-manipur-at-least-500-trucks-stranded/article67204363.ece",
-    "source": "The Hindu",
-    "image": "https://th-i.thgim.com/public/incoming/r9ozt2/article67204380.ece/alternates/LANDSCAPE_1200/PTI08_16_2023_000208B.jpg",
-    "category": "general",
-    "language": "en",
-    "country": "in",
-    "published_at": "2023-08-17T04:51:06+00:00"
-  },
-  {
-    "author": null,
-    "title": "CBDT notifies new rules to calculate policy maturity proceeds, no exemptions under 10(10D) for high-premium life insurance",
-    "description": "In a significant move, the regulatory body has ordained that Section 10 (10) of the Income Tax Act will not apply to policies with a premium above Rs 5 lakh. The clause is effective from April 1, 2023.",
-    "url": "https://www.businesstoday.in/personal-finance/tax/story/cbdt-notifies-new-rules-to-calculate-policy-maturity-proceeds-no-exemptions-under-1010d-for-high-premium-life-insurance-394446-2023-08-17?utm_source=rssfeed",
-    "source": "businesstoday",
-    "image": null,
-    "category": "general",
-    "language": "en",
-    "country": "in",
-    "published_at": "2023-08-17T05:46:12+00:00"
-  },
-  {
-    "author": null,
-    "title": "AI vs Journalism: The New York Times considers legal action against OpenAI amid copyright tensions",
-    "description": "Recent discussions between The Times and the developers of ChatGPT have been marked by tense negotiations aimed at reaching a licensing agreement",
-    "url": "https://www.businesstoday.in/technology/news/story/ai-vs-journalism-the-new-york-times-considers-legal-action-against-openai-amid-copyright-tensions-394423-2023-08-17?utm_source=rssfeed",
-    "source": "businesstoday",
-    "image": null,
-    "category": "general",
-    "language": "en",
-    "country": "in",
-    "published_at": "2023-08-17T07:16:11+00:00"
-  },
-  {
-    "author": null,
-    "title": "Monsoon mayhem: Over 80 killed as heavy rain batters Himachal, Uttarakhand, flash floods in Punjab; top updates",
-    "description": "More than 960 people have been rescued while over 10,000 have been shifted to safer places in the regions of Himachal Pradesh, Uttarakhand and Punjab battered by heavy rains and flash floods.",
-    "url": "https://www.businesstoday.in/latest/in-focus/story/monsoon-mayhem-over-80-killed-as-heavy-rain-batters-himachal-uttarakhand-flash-floods-in-punjab-top-updates-394475-2023-08-17?utm_source=rssfeed",
-    "source": "Business Today | Latest Stock Market And Economy News India",
-    "image": null,
-    "category": "business",
-    "language": "en",
-    "country": "in",
-    "published_at": "2023-08-17T07:30:37+00:00"
-  },
-  {
-    "author": null,
-    "title": "Bear attack on Dalal Street: Sensex falls about 500 pts, Nifty below 19,350",
-    "description": "BSE Sensex dropped about 500 points to trade at 65,046, while NSE's Nifty50 dropped about 130 points to hover around 19,335.50 during the day.",
-    "url": "https://www.businesstoday.in/markets/market-commentary/story/bear-attack-on-dalal-street-sensex-falls-about-500-pts-nifty-below-19350-394482-2023-08-17?utm_source=rssfeed",
-    "source": "businesstoday",
-    "image": null,
-    "category": "general",
-    "language": "en",
-    "country": "in",
-    "published_at": "2023-08-17T07:52:49+00:00"
-  },
-  {
-    "author": null,
-    "title": "Stocks to buy: 2 hotel shares that can deliver up to 27% returns",
-    "description": "JM Financial said Chalet Hotels is well-placed to benefit from the imminent upcycle due to limited room supply coming in the subject micro-markets.",
-    "url": "https://www.businesstoday.in/markets/company-stock/story/stocks-to-buy-2-hotel-shares-that-can-deliver-up-to-27-returns-394445-2023-08-17?utm_source=rssfeed",
-    "source": "businesstoday",
-    "image": null,
-    "category": "general",
-    "language": "en",
-    "country": "in",
-    "published_at": "2023-08-17T05:43:19+00:00"
-  },
-  {
-    "author": null,
-    "title": "‘Huge budget’ for e-courts project will help make lower court tech-friendly, says CJI D.Y. Chandrachud",
-    "description": "‘Huge budget’ for e-courts project will help make lower court tech-friendly, says CJI D.Y. Chandrachud",
-    "url": "https://www.thehindu.com/news/national/huge-budget-for-e-courts-project-will-help-make-lower-court-tech-friendly-says-cji-dy-chandrachud/article67204687.ece",
-    "source": "The Hindu",
-    "image": "https://th-i.thgim.com/public/incoming/bypoxe/article67204728.ece/alternates/LANDSCAPE_1200/IMG_DY_Chandrachud_atten_2_1_4KBKEVEP.jpg",
-    "category": "general",
-    "language": "en",
-    "country": "in",
-    "published_at": "2023-08-17T07:33:14+00:00"
-  },
-  {
-    "author": null,
-    "title": "Air India launches four-day ticket sale for domestic, intl routes: Check dates, prices",
-    "description": "Bookings between September 1 and October 31 to be on discounted prices till August 20, says Air India",
-    "url": "https://www.businesstoday.in/latest/corporate/story/air-india-launches-four-day-ticket-sale-for-domestic-intl-routes-check-dates-prices-394497-2023-08-17?utm_source=rssfeed",
-    "source": "Business Today | Latest Stock Market And Economy News India",
-    "image": null,
-    "category": "business",
-    "language": "en",
-    "country": "in",
-    "published_at": "2023-08-17T09:01:11+00:00"
-  },
-  {
-    "author": null,
-    "title": "Top Tamil Nadu news developments today",
-    "description": "Here is a list of top news developments from Tamil Nadu to look out for on Thursday, August 17, 2023",
-    "url": "https://www.thehindu.com/news/national/tamil-nadu/top-tamil-nadu-news-developments-on-august-17-2023/article67204294.ece",
-    "source": "The Hindu",
-    "image": "https://th-i.thgim.com/public/incoming/vwrpk1/article67196720.ece/alternates/LANDSCAPE_1200/IMG_CM_DMK_MK_STALIN_VAI_2_1_FJBKBD3L.jpg",
-    "category": "general",
-    "language": "en",
-    "country": "in",
-    "published_at": "2023-08-17T03:39:40+00:00"
-  },
-  {
-    "author": null,
-    "title": "Bata India in talks with Adidas for strategic partnership in Indian market: Report",
-    "description": "The report further mentioned that the talks are likely at an advanced stage and the deal contours are in the works",
-    "url": "https://www.businesstoday.in/latest/corporate/story/bata-india-in-talks-with-adidas-for-strategic-partnership-in-indian-market-report-394440-2023-08-17?utm_source=rssfeed",
-    "source": "Business Today | Latest Stock Market And Economy News India",
-    "image": null,
-    "category": "business",
-    "language": "en",
-    "country": "in",
-    "published_at": "2023-08-17T05:31:54+00:00"
-  },
-  {
-    "author": null,
-    "title": "Child onboard Delhi-Frankfurt flight sustained injuries due to spillage of hot beverage",
-    "description": "Incident unfortunate, all medical expenses will be reimbursed, says Vistara airlines",
-    "url": "https://www.thehindu.com/news/national/child-onboard-delhi-frankfurt-flight-sustained-injuries-due-to-spillage-of-hot-beverage/article67204550.ece",
-    "source": "The Hindu",
-    "image": "https://th-i.thgim.com/public/incoming/qmtni8/article67204572.ece/alternates/LANDSCAPE_1200/6744_18-9-2020_13-50-9_2_08_INDEX_AIRCRAFT_18_09_DEL.JPG",
-    "category": "general",
-    "language": "en",
-    "country": "in",
-    "published_at": "2023-08-17T06:21:05+00:00"
-  },
-  {
-    "author": "SportsCafe Desk",
-    "title": "FIDE World Cup | R Pragganandhaa still alive, Gukesh and Gujarathi ousted",
-    "description": "On Wednesday, Indian Grandmasters D Gukesh and Vidit Gujarathi bowed out of the FIDE World Cup after losing to Norwegian Magnus Carlsen and Azerbaijan's Nijat Abasov, respectively. On the other hand, R Pragganandhaa bounced back after losing the first game, against Arjun Erigaisi to force tie-break.",
-    "url": "https://sportscafe.in/chess/articles/2023/aug/17/fide-world-cup-r-pragganandhaa-still-alive-gukesh-and-gujarathi-ousted?utm_medium=rss",
-    "source": "Sportscafe",
-    "image": "//sportscafe.in/{https}://sportscafe.in/img/es3-cfill-w480-h240/articles/pragg%20chessbase.scorimg.webp",
-    "category": "sports",
-    "language": "en",
-    "country": "in",
-    "published_at": "2023-08-17T07:16:58+00:00"
-  },
-  {
-    "author": null,
-    "title": "‘Nehruji known for his work, not just name’: Rahul Gandhi attacks BJP on decision to rename NMML  ",
-    "description": "Gandhi’s comments came days after the Modi government decided to rename the Nehru Memorial Museum and Library (NMML) located in New Delhi to the Prime Minister’s Museum and Library Society.",
-    "url": "https://www.businesstoday.in/latest/politics/story/nehruji-known-for-his-work-not-just-name-rahul-gandhi-attacks-bjp-on-decision-to-rename-nmml-394502-2023-08-17?utm_source=rssfeed",
-    "source": "Business Today | Latest Stock Market And Economy News India",
-    "image": null,
-    "category": "business",
-    "language": "en",
-    "country": "in",
-    "published_at": "2023-08-17T09:31:33+00:00"
-  },
-  {
-    "author": null,
-    "title": "What happens to your life insurance policy after divorce? Here is what you should do",
-    "description": "The most important thing to do is to inform your insurer about the change",
-    "url": "https://www.businesstoday.in/personal-finance/insurance/story/what-happens-to-your-life-insurance-policy-after-divorce-here-is-what-you-should-do-394469-2023-08-17?utm_source=rssfeed",
-    "source": "businesstoday",
-    "image": null,
-    "category": "general",
-    "language": "en",
-    "country": "in",
-    "published_at": "2023-08-17T07:13:39+00:00"
-  },
-  {
-    "author": null,
-    "title": "Cipla shares in focus today as FDA licence of Patalganga unit suspended for 10 days",
-    "description": "Cipla shares ended flat at Rs 1242, rising 0.56% or Rs 6.95 on BSE against the previous close of Rs 1235.20.",
-    "url": "https://www.businesstoday.in/markets/company-stock/story/cipla-shares-in-focus-today-as-fda-licence-of-patalganga-unit-suspended-for-10-days-394416-2023-08-17?utm_source=rssfeed",
-    "source": "businesstoday",
-    "image": null,
-    "category": "general",
-    "language": "en",
-    "country": "in",
-    "published_at": "2023-08-17T03:27:11+00:00"
-  },
-  {
-    "author": null,
-    "title": "Glenmark Pharma shares gain as USFDA gives nod to Tacrolimus ointment",
-    "description": "Glenmark Pharma: According to IQVIATM sales data for the 12‐month period ending June 30, the Protopic Ointment, 0.03 per cent achieved annual sales of approximately $15.4 million.",
-    "url": "https://www.businesstoday.in/markets/company-stock/story/glenmark-pharma-shares-gain-as-usfda-gives-nod-to-tacrolimus-ointment-394421-2023-08-17?utm_source=rssfeed",
-    "source": "businesstoday",
-    "image": null,
-    "category": "general",
-    "language": "en",
-    "country": "in",
-    "published_at": "2023-08-17T03:57:25+00:00"
-  },
-  {
-    "author": null,
-    "title": "Sangani Hospitals makes a mild debut at D-st; stock lists at 10% premium at Rs 44",
-    "description": "The initial public offering of Sangani Hospital was open for subscription between August 4 to August 8 as the company raised Rs 15.17 crore by selling shares in the range of Rs 37-40 apiece.",
-    "url": "https://www.businesstoday.in/markets/company-stock/story/sangani-hospitals-makes-a-mild-debut-at-d-st-stock-lists-at-10-premium-at-rs-44-394436-2023-08-17?utm_source=rssfeed",
-    "source": "businesstoday",
-    "image": null,
-    "category": "general",
-    "language": "en",
-    "country": "in",
-    "published_at": "2023-08-17T05:12:39+00:00"
-  },
-  {
-    "author": null,
-    "title": "Another leopard captured on Tirumala foot path",
-    "description": "Incidentally it is the exactly the same cage set up in the vicinity of Narasimha swamy temple on the footpath where a leopard was trapped three days back on August 14",
-    "url": "https://www.thehindu.com/news/national/andhra-pradesh/another-leopard-captured-on-tirumala-foot-path/article67204225.ece",
-    "source": "The Hindu",
-    "image": "https://th-i.thgim.com/public/incoming/lwopmh/article67204288.ece/alternates/LANDSCAPE_1200/Leopard.jpeg",
-    "category": "general",
-    "language": "en",
-    "country": "in",
-    "published_at": "2023-08-17T03:31:03+00:00"
-  },
-  {
-    "author": null,
-    "title": "Congress MLA Birajit Sinha writes to Tripura Assembly Speaker for security, alleging threat to life from mafia",
-    "description": "Congress leader Birajit Sinha said, “I hope the competent authority will take proper steps for my safety.”",
-    "url": "https://www.thehindu.com/news/national/congress-mla-birajit-sinha-writes-to-tripura-assembly-speaker-for-security-alleging-threat-to-life-from-mafia/article67204479.ece",
-    "source": "The Hindu",
-    "image": "https://th-i.thgim.com/public/business/Industry/sebi92/article67204509.ece/alternates/LANDSCAPE_1200/vbk-Birajit%20Sinha-x%40BirajitSinhaINC.jpg",
-    "category": "general",
-    "language": "en",
-    "country": "in",
-    "published_at": "2023-08-17T05:59:40+00:00"
-  },
-  {
-    "author": null,
-    "title": "NCLAT to hear IDBI Bank’s appeal against Zee Entertainment on Aug 31",
-    "description": "IDBI Bank had filed the plea in December 2022 before the Mumbai bench seeking insolvency proceedings against Zee Entertainment.",
-    "url": "https://www.businesstoday.in/latest/corporate/story/nclat-to-hear-idbi-banks-appeal-against-zee-entertainment-on-aug-31-394492-2023-08-17?utm_source=rssfeed",
-    "source": "Business Today | Latest Stock Market And Economy News India",
-    "image": null,
-    "category": "business",
-    "language": "en",
-    "country": "in",
-    "published_at": "2023-08-17T08:22:17+00:00"
-  },
-  {
-    "author": null,
-    "title": "Uzbekistan says contaminated Indian cough syrup that killed 65 children was on market due to bribery: Report",
-    "description": "In Uzbekistan, a total of 21 people have been put on trial, 20 of whom are Uzbeks and one Indian, over the deaths of these children.",
-    "url": "https://www.businesstoday.in/industry/pharma/story/uzbekistan-says-contaminated-indian-cough-syrup-that-killed-65-children-was-on-market-due-to-bribery-report-394428-2023-08-17?utm_source=rssfeed",
-    "source": "Business Today | Latest Stock Market And Economy News India",
-    "image": null,
-    "category": "business",
-    "language": "en",
-    "country": "in",
-    "published_at": "2023-08-17T04:39:46+00:00"
-  },
-  {
-    "author": null,
-    "title": "Value Trap or Trapped Value? What should investors do with Bajaj Consumer, Emami and Jyothy Labs?",
-    "description": "In this article, let's talk about 3 stocks from the Consumer Staples and Discretionary sector – Bajaj Consumer, Emami and Jyothy Labs.",
-    "url": "https://www.businesstoday.in/markets/company-stock/story/value-trap-or-trapped-value-what-should-investors-do-with-bajaj-consumer-emami-and-jyothy-labs-394439-2023-08-17?utm_source=rssfeed",
-    "source": "businesstoday",
-    "image": null,
-    "category": "general",
-    "language": "en",
-    "country": "in",
-    "published_at": "2023-08-17T05:31:42+00:00"
-  }
+  "status": "ok",
+  "totalResults": 59,
+  "articles": [
+    {
+      "source": {
+        "id": null,
+        "name": "The Daily Galaxy --Great Discoveries Channel"
+      },
+      "author": "Melissa Ait Lounis",
+      "title": "Buried 6,500 Feet Below Sea Level, Scientists Discovered a Massive 145-Million-Year-Old Volcano - The Daily Galaxy",
+      "description": "What if the biggest volcano on Earth looked nothing like one? Hidden far below the ocean’s surface, scientists have found a structure so immense it changes the picture entirely.",
+      "url": "https://dailygalaxy.com/2026/03/ancient-massive-volcano-buried-deep-sea/",
+      "urlToImage": "https://dailygalaxy.com/wp-content/uploads/2026/03/Buried-6500-Feet-Below-Sea-Level-Scientists-Discovered-a-Massive-145-Million-Year-Old-Volcano-Is-It-Still-Active-scaled.jpg",
+      "publishedAt": "2026-03-22T12:45:00Z",
+      "content": "Buried deep under the Pacific Ocean, the Tamu Massif has been identified as the largest single volcano ever discovered on Earth. First described by a team led by Dr. William Sager of the University o… [+2863 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "The Daily Galaxy --Great Discoveries Channel"
+      },
+      "author": "Arezki Amiri",
+      "title": "Chinese Orbiter Crushes Starlink With a 2-Watt Laser From 36,000km Above Earth - The Daily Galaxy",
+      "description": "Using a 2-watt laser and a ground system built to fight atmospheric distortion, researchers report a geostationary downlink that outpaced Starlink.",
+      "url": "https://dailygalaxy.com/2026/03/chinese-satellite-outpaces-starlink-2-watt-laser-from-orbit/",
+      "urlToImage": "https://dailygalaxy.com/wp-content/uploads/2026/03/Chinese-Satellite-Pulls-Off-2-Watt-Laser-Feat-That-Makes-Starlink-Look-Slow-scaled.jpg",
+      "publishedAt": "2026-03-22T12:15:00Z",
+      "content": "At Lijiang Observatory in southwestern China, the signal did not arrive as a neat, steady beam. It came down from a satellite parked about 36,000km above Earth in geostationary orbit, then hit the at… [+5445 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Indiandefencereview.com"
+      },
+      "author": "Evelyn Hart",
+      "title": "Deep Below Earth, Scientists Uncover 1.2 Billion-Year-Old Water From Before Life Colonized the Land - Indian Defence Review",
+      "description": "Deep beneath a Canadian mine, researchers cracked open a fracture in the ancient rock and found water that should not exist there.",
+      "url": "https://indiandefencereview.com/1-2-billion-year-old-water-discovered-inside-canadian-mine/",
+      "urlToImage": "https://indiandefencereview.com/wp-content/uploads/2026/03/a-mine-revealed-12-billion-year-old-water-hidden-deep-below-earth-scaled.jpg",
+      "publishedAt": "2026-03-22T11:00:00Z",
+      "content": "Deep below the Canadian Shield, in a mine that cuts through some of the oldest rock on Earth, researchers stumbled upon something that had been hiding in plain sight. The water came from a fracture i… [+5197 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Indiandefencereview.com"
+      },
+      "author": "Evelyn Hart",
+      "title": "“I Mapped the Invisible”: U.S. High-School Student Uncovers 1.5 Million Hidden Cosmic Objects NASA Missed - Indian Defence Review",
+      "description": "A high school student’s algorithm processed 200 billion infrared detections, revealing 1.5 million cosmic objects the world had never cataloged.",
+      "url": "https://indiandefencereview.com/american-high-school-student-uncovers-1-5-million-hidden-cosmic-objects/",
+      "urlToImage": "https://indiandefencereview.com/wp-content/uploads/2026/03/a-summer-student-at-caltech-built-a-machine-to-comb-the-entire-infrared-sky-at-scale-scaled.jpg",
+      "publishedAt": "2026-03-22T10:30:00Z",
+      "content": "For more than a decade, NASAs NEOWISE telescope scanned the entire sky in infrared. Its primary mission was hunting for asteroids near Earth, but it kept recording everything else in its view: distan… [+6016 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Space.com"
+      },
+      "author": "Tereza Pultarova",
+      "title": "'This is really intolerable': Astronomers protest giant orbiting mirror project and SpaceX's million AI satellites - Space",
+      "description": "\"It's absolutely the destruction of a central part of human heritage.\"",
+      "url": "https://www.space.com/space-exploration/satellites/this-is-really-intolerable-astronomers-protest-giant-orbiting-mirror-project-and-spacexs-million-ai-satellites",
+      "urlToImage": "https://cdn.mos.cms.futurecdn.net/fhxocFbMUeNHXpnDnSJWmT-2000-80.jpg",
+      "publishedAt": "2026-03-22T10:00:00Z",
+      "content": null
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "COLlive - Chabad News"
+      },
+      "author": "COLlive News",
+      "title": "The Rebbe’s Explanation on ‘ Shelo Assani Isha’ - COLlive",
+      "description": "Historic Treasures by Rabbi Sholom Ber Schapiro: The Rebbe’s response to a woman asking about equality between genders and the explanation of the bracha, Shelo Assani Isha. Video",
+      "url": "https://collive.com/the-rebbes-explanation-on-shelo-assani-isha/",
+      "urlToImage": "https://collive.com/wp-content/uploads/2020/08/Schapiro.jpg",
+      "publishedAt": "2026-03-22T04:40:34Z",
+      "content": "Historic Treasures by Rabbi Sholom Ber Schapiro: The Rebbes response to a woman asking about equality between genders and the explanation of the bracha, Shelo Assani Isha. VideoRabbi Sholom Ber Schap… [+406 chars]"
+    },
+    {
+      "source": {
+        "id": "cbs-news",
+        "name": "CBS News"
+      },
+      "author": "Kierra  Frazier",
+      "title": "Possible meteorite crashes into Houston area home, officials say - CBS News",
+      "description": "A possible meteorite crashed into a Houston area house on Saturday night, tearing through the roof and two stories of the home, officials said.",
+      "url": "https://www.cbsnews.com/news/possible-meteorite-crashes-into-houston-area-house/",
+      "urlToImage": "https://assets2.cbsnewsstatic.com/hub/i/r/2026/03/22/0e328eaf-2ba3-4bf3-b021-362194371336/thumbnail/1200x630/4b3de0fae390c6bb55c1e031ee11edad/meteor.jpg",
+      "publishedAt": "2026-03-22T03:29:00Z",
+      "content": "A possible meteorite crashed into a Houston area house on Saturday night, tearing through the roof and two stories of the home, officials said. \r\nPonderosa Fire Chief Fred Windisch told CBS News that… [+1103 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Indiandefencereview.com"
+      },
+      "author": "Emily Carter",
+      "title": "Scientists Unearth Exceptionally Well-preserved Archaeopteryx fossil, Solving the Biggest Mystery of Dinosaur Flight - Indian Defence Review",
+      "description": "A newly discovered, well-preserved Archaeopteryx fossil offers fresh insights into how early dinosaurs may have evolved flight.",
+      "url": "https://indiandefencereview.com/scientist-preserved-archaeopteryx-fossil/",
+      "urlToImage": "https://indiandefencereview.com/wp-content/uploads/2026/03/scientists-unearth-exceptionally-well-preserved-archaeopteryx-fossil-solving-the-biggest-mystery-of-dinosaur-flight-scaled.png",
+      "publishedAt": "2026-03-22T00:25:08Z",
+      "content": "A new discovery of a nearly intact Archaeopteryx fossil is providing fresh evidence that may finally settle the long-standing debate over how flight evolved in dinosaurs. Published in Nature, the stu… [+3865 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "ScienceAlert"
+      },
+      "author": "ScienceAlert Staff",
+      "title": "Ancient Fragments Could Be The World's Oldest Known Geometry - ScienceAlert",
+      "description": "Ancient humans were surprisingly creative, structured, and geometrical in their thinking some 60,000 years ago, according to some intricately engraved ostrich eggshells found across southern Africa.",
+      "url": "https://www.sciencealert.com/ancient-fragments-could-be-the-worlds-oldest-known-geometry",
+      "urlToImage": "https://www.sciencealert.com/images/2026/03/FourDecoratedOstrichEggshells.jpg",
+      "publishedAt": "2026-03-21T21:02:28Z",
+      "content": "Ancient humans were surprisingly creative, structured, and geometrical in their thinking some 60,000 years ago, according to some intricately engraved ostrich eggshells found across southern Africa.\r… [+3711 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "PetaPixel"
+      },
+      "author": "Ivor Rackham",
+      "title": "Planning Landscape Photos, Part 1: Must-Have Gear and Scouting - PetaPixel",
+      "description": "Must-have gear and how to scout the perfect landscape photo.",
+      "url": "https://petapixel.com/2026/03/21/planning-a-landscape-photoshoot-part-1-must-have-gear/",
+      "urlToImage": "https://petapixel.com/assets/uploads/2026/03/landscape-standing-stones-header.jpg",
+      "publishedAt": "2026-03-21T19:00:54Z",
+      "content": "Just walking out with your camera and hoping for the best reduces the chances of getting good photos. With a little forethought and the right tools, however, you can take fabulous shots. Landscape ph… [+7180 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Phys.Org"
+      },
+      "author": "Phys.org",
+      "title": "JWST probes emerging young star clusters in nearby spiral galaxy NGC 628 - Phys.org",
+      "description": null,
+      "url": "https://phys.org/news/2026-03-jwst-probes-emerging-young-star.html",
+      "urlToImage": null,
+      "publishedAt": "2026-03-21T19:00:01Z",
+      "content": null
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Foxweather.com"
+      },
+      "author": null,
+      "title": "Watch: NASA's Hubble Space Telescope captures rare proof of comet breaking apart - FOX Weather",
+      "description": "NASA's Hubble Telescope captured the rare phenomenon of a comet breaking apart, catching scientists off guard until they saw the jaw-dropping proof for themselves.",
+      "url": "https://www.foxweather.com/earth-space/nasa-hubble-space-telescope-rare-proof-comet-breaking-apart",
+      "urlToImage": "https://images.foxweather.com/d3ayhwgrwyc4j8.cloudfront.net/ue2/mcvod/fmc-1zw7of62bx83kv17_A-1523771--1517569/hls/v1_1/1024/512/index.m3u8?ve=1&tl=1",
+      "publishedAt": "2026-03-21T18:34:00Z",
+      "content": "NASA's Hubble Telescope captured the rare phenomenon of a comet breaking apart, catching scientists off guard until they saw the jaw-dropping proof for themselves. \r\nHubble captured images C/2025 K1 … [+2589 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Phys.Org"
+      },
+      "author": "Phys.org",
+      "title": "Dishwashing with side effects: Kitchen sponges release microplastics - Phys.org",
+      "description": null,
+      "url": "https://phys.org/news/2026-03-dishwashing-side-effects-kitchen-sponges.html",
+      "urlToImage": null,
+      "publishedAt": "2026-03-21T18:00:03Z",
+      "content": null
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Phys.Org"
+      },
+      "author": "Phys.org",
+      "title": "Superconducting altermagnets could carry spin without energy loss - Phys.org",
+      "description": null,
+      "url": "https://phys.org/news/2026-03-superconducting-altermagnets-energy-loss.html",
+      "urlToImage": null,
+      "publishedAt": "2026-03-21T16:00:02Z",
+      "content": null
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Indiandefencereview.com"
+      },
+      "author": "Slamani Aghilas",
+      "title": "The Real \"Last of Us\" Is Happening in the Amazon, and a Spider Is Playing the Fungus - Indian Defence Review",
+      "description": "A hiker poked what he thought was a zombie fungus deep in the Amazon, and it crawled away.",
+      "url": "https://indiandefencereview.com/last-of-us-spider-is-playing-the-fungus/",
+      "urlToImage": "https://indiandefencereview.com/wp-content/uploads/2026/03/newly-discovered-species-of-spider-in-the-ecuadorean-amazon-mimics-a-fungus-scaled.jpg",
+      "publishedAt": "2026-03-21T15:00:00Z",
+      "content": "A newly discovered Amazon spider has evolved one of nature’s most unsettling disguises: it mimics a parasitic fungus that kills and zombifies its hosts. The find, published in the journal Zootaxa, ma… [+4681 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Live Science"
+      },
+      "author": "Skyler Ware",
+      "title": "Physicists create electron 'catapult' that moves particles through solar material at record speed - Live Science",
+      "description": "Using a new method, physicists found a way to 'catapult' electrons across solar materials in quadrillionths of a second.",
+      "url": "https://www.livescience.com/physics-mathematics/particle-physics/physicists-created-an-electron-catapult-that-moves-particles-at-extraordinary-speed",
+      "urlToImage": "https://cdn.mos.cms.futurecdn.net/FSAVcr42b79m9shKEic7QX-1920-80.jpg",
+      "publishedAt": "2026-03-21T15:00:00Z",
+      "content": null
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Phys.Org"
+      },
+      "author": "Phys.org",
+      "title": "Moons orbiting wandering exoplanets could be habitable—with one catch - Phys.org",
+      "description": null,
+      "url": "https://phys.org/news/2026-03-moons-orbiting-exoplanets-habitable.html",
+      "urlToImage": null,
+      "publishedAt": "2026-03-21T13:50:01Z",
+      "content": null
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Discoverwildlife.com"
+      },
+      "author": "Will Newton",
+      "title": "\"Raiding parties are the soldiers, bearing enormous heads armed with long, scissor-like mandibles capable of dismantling prey piece by piece...\" - BBC Wildlife Magazine",
+      "description": "This is definitely an army that marches on its stomach...",
+      "url": "https://www.discoverwildlife.com/animal-facts/insects-invertebrates/driver-ants",
+      "urlToImage": "https://c02.purpledshub.com/uploads/sites/62/2026/03/driver-ants.jpg?w=1200",
+      "publishedAt": "2026-03-21T13:45:07Z",
+      "content": "What driver ants lack in size they make up for in sheer weight of numbers. A single colony may contain more than a million workers, and when they go hunting, the forest floor itself seems to come ali… [+813 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "The Daily Galaxy --Great Discoveries Channel"
+      },
+      "author": "Kouceila Rekik",
+      "title": "Astronomers Find Massive Asteroid Spinning at ‘Impossible’ Speed - The Daily Galaxy",
+      "description": "Astronomers have spotted a massive asteroid rotating at an unbelievable speed, challenging our understanding of asteroid dynamics and material composition.",
+      "url": "https://dailygalaxy.com/2026/03/massive-asteroid-spinning-impossible-speed/",
+      "urlToImage": "https://dailygalaxy.com/wp-content/uploads/2026/03/Astronomers-Find-Massive-Asteroid-Spinning-at-Impossible-Speed-scaled.png",
+      "publishedAt": "2026-03-21T13:45:00Z",
+      "content": "astronomers have identified a massive asteroid spinning faster than anyone could have imagined. The asteroid, with a diameter of 710 meters, completes a full rotation in just 1.9 minutes, far quicker… [+3993 chars]"
+    }
+  ]
+}
+
 ]
   

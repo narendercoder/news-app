@@ -11,7 +11,7 @@ const NewsCategory = ({params : {category}}) => {
   const {categoryNews} = news;
   const dispatch = useDispatch();
 
-  console.log(categoryNews);
+  // console.log(categoryNews);
   
   useEffect(()=>{
     dispatch(fetchCategoryNews(`${category}`))

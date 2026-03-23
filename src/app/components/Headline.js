@@ -21,7 +21,7 @@ const Headline = ({article}) => {
                         </a>
                     </h4>
                 <div className='date'>
-                    {formatDate(article.published_at)}
+                    {formatDate(article.publishedAt)}
                 </div>
             </div>
         </div>

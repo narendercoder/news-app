@@ -4,6 +4,7 @@ import Sidebar from "../components/Sidebar";
 import Badege from "../components/Badege";
 import { MdDateRange } from "react-icons/md";
 import { unavailable } from "../config/images";
+import Link from "next/link";
 
 const ArticlePage = ({ searchParams }) => {
   if (
@@ -24,7 +25,11 @@ const ArticlePage = ({ searchParams }) => {
                 <div className="mb-3">
                   <Badege category={article.category} />
                 </div>
-                <h1 className="text-3xl mb-3">{article.title}</h1>
+                <h1 className="text-3xl mb-3">
+                  <Link href={article.url} target="_blank" className="hover:underline">
+                    {article.title}
+                  </Link>
+                </h1>
                 <ul className="flex items-center flex-wrap mb-4">
                   <li className="mr-3 uppercase">
                     By{" "}
@@ -34,13 +39,13 @@ const ArticlePage = ({ searchParams }) => {
                   </li>
                   <li className="flex justify-center items-center">
                     <MdDateRange className="inline mr-2 text-base" />
-                    {article.published_at}
+                    {article.publishedAt}
                   </li>
                 </ul>
                 <div className="mb-10">
-                  {article.image && (
+                  {article.urlToImage && (
                     <img
-                      src={article.image || unavailable}
+                      src={article.urlToImage || unavailable}
                       alt="image"
                       className="w-full h-full"
                     />
