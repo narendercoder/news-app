@@ -20,6 +20,7 @@ const SearchPage =  ({params: {term}}) => {
 
     dispatch(fetchSearchNews(`${term}`, 5))
   }, [term])
+  
   return (
     <Wrapper className="py-10 w-full">
       <div className="news-content-area flex flex-col">

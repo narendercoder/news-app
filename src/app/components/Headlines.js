@@ -11,11 +11,11 @@ const Headlines = () => {
   const dispatch = useDispatch();
   const newsdata = useSelector(state => state.news);
   const {headlines} = newsdata;
-  const date = new Date();
-  const formattedDate = formatDate(date);
+  // const date = new Date();
+  // const formattedDate = formatDate(date);
 
   useEffect(()=>{
-    dispatch(fetchHeadlines(`http://api.mediastack.com/v1/news?access_key=${process.env.NEXT_PUBLIC_API_KEY}&countries=in&date=${formattedDate}&limit=5`))
+    dispatch(fetchHeadlines('', 'bitcoin', '', 5))
   }, [])
 
   return (
