@@ -22,7 +22,7 @@ const GridView = ({ article }) => {
           <div className="card-img w-full h-56 flex justify-center items-center overflow-hidden">
             <div className="w-full h-full">
               <img
-                src={article.urlToImage || unavailable}
+                src={article.image || unavailable}
                 alt="img"
                 width={480}
                 height={504}

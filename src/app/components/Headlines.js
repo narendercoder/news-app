@@ -15,7 +15,7 @@ const Headlines = () => {
   // const formattedDate = formatDate(date);
 
   useEffect(()=>{
-    dispatch(fetchHeadlines('', 'bitcoin', '', 5))
+    dispatch(fetchHeadlines(5))
   }, [])
 
   return (

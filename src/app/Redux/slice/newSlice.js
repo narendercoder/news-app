@@ -1,78 +1,42 @@
 import { newsdata } from "@/app/config/sampleoutput";
-// import { categories } from "@/app/constant";
-// import { formatDate } from "@/app/helpers/datehelper";
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-import axios from "axios";
 const date = new Date();
-// const formattedDate = formatDate(date);
-
-//
-export const fetchingNews = async (category, keywords, isDynamic, limit) => {
-
-try {
-     let BASE_URL = "";
-
-    // 🔍 SEARCH API
-    if (category) {
-      BASE_URL = `https://newsapi.org/v2/top-headlines?country=us&category=${category}&pageSize=${limit}&apiKey=${process.env.NEXT_PUBLIC_API_KEY}`; 
-    }
-    // 📰 CATEGORY / HEADLINES API
-    else {
-      BASE_URL = `https://newsapi.org/v2/everything?q=${keywords}&language=en&sortBy=publishedAt&pageSize=${limit}&apiKey=${process.env.NEXT_PUBLIC_API_KEY}`;
-    }
-
-    const res = await axios.get(`${BASE_URL}`, {
-      cache: isDynamic ? "no-cache" : "default",
-      next: isDynamic ? { revalidate: 0 } : { revalidate: 20 },
-    });
-
-    const data = res.data.articles;
-    return data; // ⚡ returns { data: [...] }
-  } catch (error) {
-    console.error("Error fetching news:", error);
-    return null;
-  }
-
-};
 
 
-// Create async thunk for fetching news
-export const fetchNews = createAsyncThunk("fetchNews", async () => {
-  try {
-    const response =  await fetchingNews("general") || newsdata.articles;
-    return response
 
-  } catch (error) {
-    throw error
-  }
-});
-
-  export const fetchSearchNews = createAsyncThunk("fetchSearchNews", async (keyword, limit) => {
-    try {
-      const response = await fetchingNews('',keyword, limit) 
-      return response;
-    } catch (error) {
-      throw error;
-    }
-  });
-
-export const fetchCategoryNews = createAsyncThunk("fetchCategoryNews",  async (cate) => {
-    try {
-      const response = await fetchingNews(cate) 
-      return response
-    } catch (error) {
-      throw error;
-    }
+export const fetchNews = createAsyncThunk(
+  "fetchNews",
+  async () => {
+    const res = await fetch(`/api/news?keyword=india&limit=10`);
+    return await res.json();
   }
 );
 
-export const fetchHeadlines = createAsyncThunk("fetchHeadlines",async () => {
-    try {
-      const response = await fetchingNews('', 'bitcoin', '', 5)
-      return response
-    } catch (error) {
-      throw error;
-    }
+export const fetchSearchNews = createAsyncThunk(
+  "fetchSearchNews",
+  async ({ keyword, limit }) => {
+    const res = await fetch(
+      `/api/news?keyword=${keyword}&limit=${limit}`
+    );
+    return await res.json();
+  }
+);
+
+export const fetchCategoryNews = createAsyncThunk(
+  "fetchCategoryNews",
+  async ({ category, limit }) => {
+    const res = await fetch(
+      `/api/news?category=${category}&limit=${limit}`
+    );
+    return await res.json();
+  }
+);
+
+export const fetchHeadlines = createAsyncThunk(
+  "fetchHeadlines",
+  async (limit = 5) => {
+    const res = await fetch(`/api/news?headlines=true&limit=${limit}`);
+    return await res.json();
   }
 );
 

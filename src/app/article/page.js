@@ -43,17 +43,22 @@ const ArticlePage = ({ searchParams }) => {
                   </li>
                 </ul>
                 <div className="mb-10">
-                  {article.urlToImage && (
+                  {article.image && (
                     <img
-                      src={article.urlToImage || unavailable}
+                      src={article.image || unavailable}
                       alt="image"
                       className="w-full h-full"
                     />
                   )}
                 </div>
-                <div className="text-xl text-gray-700">
+                <div className="text-xl text-gray-400 dark:text-gray-300">
                   {article.description && (
                     <div className="w-full h-full">{article.description}</div>
+                  )}
+                </div>
+                 <div className="mt-4 text-xl text-gray-500 dark:text-gray-400">
+                  {article.content && (
+                    <div className="w-full h-full">{article.content}</div>
                   )}
                 </div>
               </section>

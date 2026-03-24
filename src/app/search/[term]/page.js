@@ -16,10 +16,9 @@ const SearchPage =  ({params: {term}}) => {
   const date = new Date();
   // const formattedDate = formatDate(date);
 
-  useEffect(()=>{
-
-    dispatch(fetchSearchNews(`${term}`, 5))
-  }, [term])
+ useEffect(() => {
+  dispatch(fetchSearchNews({ keyword: term, limit: 5 }));
+}, [term]);
   
   return (
     <Wrapper className="py-10 w-full">
